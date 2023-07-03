@@ -102,21 +102,49 @@ p{
 }
 
 .tarjetaPublicaciones{
-    width: 1360px; height: 601px; position: relative;
+/*     margin-top: 50px;
+    width: 100%;
+    height: 601px;
+    position: relative; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 
 .tarjeta{
-    width: 440px; height: 600px; left: 0px; top: 1px; position: absolute; background: #D9D9D9; border-radius: 15px;
+    /*width: 30%;
+    height: 601px;
+    position: relative; */
+    width: 100%;
+    height: auto;
+    top: 1px;
+    background: #D9D9D9;
+    border-radius: 15px;
+    margin-top: 50px;
 }
 
 .tarjetaPortada{
-    width: 440px; height: 300px; left: 0px; top: 0px; position: absolute; background: #007AC2; border-top-left-radius: 15px; border-top-right-radius: 15px;
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    background: #007AC2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .tarjetaDescripcion{
-    width: 388px; height: 42px; left: 26px; top: 341px; position: absolute; color: black; font-size: 32px; font-family: Microsoft YaHei UI; font-weight: 700; word-wrap: break-word;
+    margin: 20px;
 }
 
+.tarjetaDescripcion h2{
+    text-align: center;
+}
+
+.tarjetaDescripcion p{
+    text-align: justify;
+}
 
 /*Responsive Tableta*/
 @media (max-width: 952px){
@@ -127,7 +155,7 @@ p{
         display: none;
     }
     .publicacionesPrincipales{
-        height: 530px;
+        height: 1100px;
     }
     .portadaPrincipal{
         width: 100%;
@@ -139,9 +167,15 @@ p{
     .descripcion{
         width: 50%;
     }
+    .tarjetaPublicaciones{
+        position: relative;
+        top: 470px;
+    }
 }
 
 /*Responsive Celular*/
 @media (max-width: 858px){
-
+    .tarjetaPublicaciones{
+        grid-template-columns: 1fr;
+    }
 }
