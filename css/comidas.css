@@ -1,15 +1,3 @@
-section{
-    flex: 1;
-    width: 100%;
-}
-
-h1{
-    text-align: center;
-    color: #fff;
-    line-height: 100px;
-    font-size: 3.5em;
-}
-
 .nombreSeccion{
     padding-top: 80px;
     background: url(/ImagenesMikuy/Fondo\ Comidas.png) no-repeat;
@@ -18,160 +6,38 @@ h1{
     height: 200px;
 }
 
-.publicacionesPrincipales{
-    width: 100%;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-}
-
-.publicaciones{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 40px;
-}
-
 .portadaPrincipal{
     background: url(/ImagenesMikuy/Fondo\ Comidas.png);
     border-radius: 15px;
-}
-
-.portada{
-    width: 190px;
-    height: 140px;
-    border-radius: 15px;
+    text-align: center;
 }
 
 #portada1{
     background: url(/ImagenesMikuy/Locro\ de\ papas\ 1.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #portada2{
     background: url(/ImagenesMikuy/Encebollado\ 1.png);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #portada3{
     background: url(/ImagenesMikuy/Gallinas\ Pinllo\ 2.png);
-    background-size: 100% 100%;
-}
-
-h2{
-    font-size: 24px;
-    font-family: Microsoft YaHei UI;
-    font-weight: 700;
-    word-wrap: break-word;
-    line-height: 40px;
-}
-p{
-    font-size: 16px;
-    font-family: Microsoft YaHei UI;
-    font-weight: 400;
-    word-wrap: break-word;
-    line-height: 24px;
-}
-
-.tarjetaPublicaciones{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 40px;
-    padding: 50px;
-}
-
-.tarjeta{
-    width: 100%;
-    top: 1px;
-    background: #D9D9D9;
-    border-radius: 15px;
-}
-
-.tarjetaPortada{
-    width: 100%;
-    height: 300px;
-    left: 0px;
-    top: 0px;
-    background: #007AC2;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    background-size: cover;
 }
 
 #portadaTarjeta1{
     background: url(/ImagenesMikuy/Helados_1.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #portadaTarjeta2{
     background: url(/ImagenesMikuy/PanPinllo_1.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #portadaTarjeta3{
     background: url(/ImagenesMikuy/Cuy\ 3.jpg);
-    background-size: 100%;
-}
-
-.tarjetaDescripcion{
-    margin: 20px;
-}
-
-.tarjetaDescripcion h2{
-    text-align: center;
-}
-
-.tarjetaDescripcion p{
-    text-align: justify;
-}
-
-/*Responsive Tableta*/
-@media (max-width: 952px){
-
-    .nombreSeccion{
-        margin-top: 80px;
-    }
-    .portadaPrincipal{
-        display: none;
-    }
-    .publicacionesPrincipales{
-        padding: 30px;
-        grid-template-columns: 1fr;
-    }
-/*     .portadaPrincipal{
-        width: 100%;
-    }
-    .publicacion{
-        left: 10%;
-        width: 100%;
-    }*/
-    .descripcion{
-        margin-top: 20px;
-        margin-left: 10px;
-    } 
-    .tarjetaPublicaciones{
-        padding: 30px;
-        row-gap: 40px;
-    }
-}
-
-/*Responsive Celular*/
-@media (max-width: 530px){
-    .publicacionesPrincipales{
-        padding: 15px;
-    }
-    .portada{
-        width: 150px;
-    }
-    .descripcion{
-        margin-top: 0px;
-    }
-    .tarjetaPublicaciones{
-        grid-template-columns: 1fr;
-    }
-    h2{
-        line-height: 28px;
-    }
+    background-size: cover;
 }
