@@ -24,7 +24,7 @@ header{
 
 nav{
     position: fixed;
-    background: #fff;
+    background: #F2F2F2;
     height: 80px;
     width: 100%;
 }
@@ -44,6 +44,7 @@ nav{
     margin-right: 20px;
     width: 50%;
     text-align: left;
+    padding-left: 3%;
 }
 
 
