@@ -1,8 +1,153 @@
-section{
+.cabecera{
     background: url(/ImagenesMikuy/fondoPrincipal.png) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: calc(100vh - 80px);
+    height: 100vh;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cabecera h2{
+    color: #fff;
+    font-size: 3em;
+    line-height: 2em;
+    padding-left: 5%;
+}
+
+.cabecera h3{
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 100;
+    padding-left: 5%;
+}
+
+.busqueda{
+    width: 100%;
+    padding-top: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.barraBusqueda{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(0, 122, 194, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.barraBusqueda input{
+    background: transparent;
     flex: 1;
+    border: 0;
+    outline: none;
+    padding:  24px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.barraBusqueda button img{
+    width: 25px;
+}
+
+.barraBusqueda button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #007AC2;
+    cursor: pointer;
+}
+
+.recomendaciones p{
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-left: 5%;
+}
+
+.recomendaciones h2{
+    font-size: 3em;
+    padding-left: 5%;
+}
+
+.tarjetaPublicaciones{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 40px;
+    padding: 2% 5%;
+}
+
+.tarjeta{
+    width: 100%;
+    top: 1px;
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+
+.tarjetaPortada{
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    background: #007AC2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.tarjetaDescripcion{
+    margin: 20px;
+}
+
+.tarjetaDescripcion h2{
+    text-align: center;
+}
+
+#portadaTarjeta1{
+    background: url(/ImagenesMikuy/Pailon\ del\ Diablo\ 3.jpg);
+    background-size: cover;
+}
+
+#portadaTarjeta2{
+    background: url(/ImagenesMikuy/Cotopaxi.jpg);
+    background-size: cover;
+}
+
+#portadaTarjeta3{
+    background: url(/ImagenesMikuy/La\ Fornace\ 1.jpg);
+    background-size: cover;
+}
+
+/*Responsive Tableta*/
+@media (max-width: 952px){
+    .cabecera{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Responsive Celular*/
+@media (max-width: 530px){
+    .cabecera h2{
+        font-size: 2.5em;
+    }
+    .cabecera h3{
+        font-size: 1.2em;
+    }
+    .barraBusqueda input{
+        width: 20px;
+    }
 }
