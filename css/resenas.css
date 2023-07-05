@@ -1,43 +1,44 @@
 .nombreSeccion{
     padding-top: 80px;
-    background: url(/ImagenesMikuy/Fondo\ lugares.png) no-repeat;
+    background: url(/ImagenesMikuy/Redaccion2.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: fixed;
     height: 200px;
 }
 
 .portadaPrincipal{
-    background: url(/ImagenesMikuy/Fondo\ lugares.png);
+    background: url(/ImagenesMikuy/Redaccion3.png);
+    background-size: cover;
     border-radius: 15px;
     text-align: center;
 }
 
 #portada1{
-    background: url(/ImagenesMikuy/Pailon\ del\ Diablo\ 3.jpg) no-repeat;
+    background: url(/ImagenesMikuy/La\ Fornace\ 1.jpg) no-repeat;
     background-size: cover;
 }
 
 #portada2{
-    background: url(/ImagenesMikuy/Mundug_4.jpg);
+    background: url(/ImagenesMikuy/Estacion\ cientifica\ 2.jpg);
     background-size: cover;
 }
 
 #portada3{
-    background: url(/ImagenesMikuy/Tren.jpeg);
+    background: url(/ImagenesMikuy/Delicias\ Cuencanas\ 2.jpg);
     background-size: cover;
 }
 
 #portadaTarjeta1{
-    background: url(/ImagenesMikuy/Quinta\ Atocha\ 1.jpg);
+    background: url(/ImagenesMikuy/Colada\ morada\ 2.jpg);
     background-size: cover;
 }
 
 #portadaTarjeta2{
-    background: url(/ImagenesMikuy/CatedralAmbato1.jpg);
+    background: url(/ImagenesMikuy/Volcan\ Cotopaxi.jpg);
     background-size: cover;
 }
 
 #portadaTarjeta3{
-    background: url(/ImagenesMikuy/Parque\ de\ la\ familia\ 2.jpg);
+    background: url(/ImagenesMikuy/Playa\ 2.jpg);
     background-size: cover;
 }

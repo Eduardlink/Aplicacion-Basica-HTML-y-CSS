@@ -1,0 +1,117 @@
+.nombreSeccion{
+    padding-top: 80px;
+    background-image: linear-gradient(rgba(0,8,51,0.9), rgba(0,8,51,0.6)), url(/ImagenesMikuy/Fondo\ Mapa.jpg);
+    background-size: cover;
+    background-position: fixed;
+    height: 30vh;
+}
+
+#portadaTarjeta1{
+    background: url(/ImagenesMikuy/Pailon\ del\ Diablo\ 3.jpg);
+    background-size: cover;
+}
+
+#portadaTarjeta2{
+    background: url(/ImagenesMikuy/Cotopaxi.jpg);
+    background-size: cover;
+}
+
+#portadaTarjeta3{
+    background: url(/ImagenesMikuy/La\ Fornace\ 1.jpg);
+    background-size: cover;
+}
+
+#portadaTarjeta4{
+    background: url(/ImagenesMikuy/Parque\ de\ la\ familia\ 1.jpeg);
+    background-size: cover;
+}
+
+#portadaTarjeta5{
+    background: url(/ImagenesMikuy/PanPinllo_1.jpg);
+    background-size: cover;
+}
+
+#portadaTarjeta6{
+    background: url(/ImagenesMikuy/Quimbolitos\ 2.jpg);
+    background-size: cover;
+}
+
+.tarjetaPublicaciones{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contenedorBusqueda{
+    width: 100%;
+    padding: 2%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barraBusqueda{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(0, 122, 194, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.barraBusqueda input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding:  24px 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+::placeholder{
+    color: #000;
+}
+
+.barraBusqueda button img{
+    width: 25px;
+}
+
+.barraBusqueda button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #007AC2;
+    cursor: pointer;
+}
+
+/*Responsive Tableta*/
+@media (max-width: 952px){
+    .tarjetaPublicaciones{
+        padding: 20px;
+        column-gap: 20px;
+    }
+    h1{
+        font-size: 2.5em;
+        line-height: 2em;
+    }
+}
+
+/*Responsive Celular*/
+@media (max-width: 530px){
+    
+    .barraBusqueda input{
+        width: 20px;
+    }
+
+    .tarjetaPublicaciones{
+        padding: 15px;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
