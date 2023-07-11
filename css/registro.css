@@ -12,50 +12,48 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    height: 890px;
 }
 
-form {
-    margin-top: 50px;
-    padding: 0 12px;
-}
+
 
 #registrar {
-    margin-top: 15px;
-    text-align: center !important;
-    width: 60%;
-    height: 40px;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    background-color: #3ba1da;
-    font-size: 15px;
-    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius:15px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    background: #007ac2;
+    box-shadow: inset 0 0 0 0 #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s ease-in;
 }
 
 #registrar:hover {
-    background-color: #40abe9;
+    border: 1px solid transparent;
+    box-shadow: inset 300px 0 0 0 #fff;
+    color: #007ac2;
 }
 
 .square {
-    text-align: center;
-    margin-top: 120px;
-    padding-top: 40px;
-    width: 75%;
-    background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 4%;
+    text-align: center;
+    margin-top: 130px;
+    padding: 40px 20px;
+    width: 75%;
+    background-color: #fff;
+    column-gap: 40px;
     border-radius: 25px;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 #registro {
     width: 100%;
-    height: 670px;
-}
+} 
 
 #cuenta {
     text-align: center;
@@ -100,7 +98,7 @@ form {
     } */
 
     .square {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #registro {
