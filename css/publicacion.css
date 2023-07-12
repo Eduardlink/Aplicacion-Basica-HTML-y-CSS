@@ -1,86 +1,151 @@
-.tituloPublicacion{
+.tituloPublicacion {
     padding-top: 80px;
-    background-image: linear-gradient(rgba(0,8,51,0.9), rgba(0,8,51,0.6)), url(/ImagenesMikuy/Pailon\ del\ Diablo\ 3.jpg);
+    background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.6)), url(/ImagenesMikuy/Pailon\ del\ Diablo\ 3.jpg);
     background-size: cover;
     background-position: fixed;
-    height: 200px;
+    height: 250px;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #fff;
-    line-height: 100px;
+    line-height: 150px;
     font-size: 3.5em;
 }
 
-.calificacion{
+/*PUNTACION DE LA PUBLICACION*/
+.calificacion {
     padding: 2% 10%;
 }
 
-.calificacion p{
+.calificacion p {
     color: #E09100;
 }
 
-.contenido{
+
+/*CONTENIDO*/
+.contenido {
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.fotos{
+.fotos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2%;
     height: 300px;
     padding: 2% 10%;
 }
 
-#foto1{
+#foto1 {
     border-radius: 15px;
     background: url(/ImagenesMikuy/Pailon\ del\ Diablo\ 1.jpg);
     background-size: cover;
 }
-#foto2{
+
+#foto2 {
     border-radius: 15px;
     background: url(/ImagenesMikuy/Pailon\ del\ Diablo\ 2.jpg);
     background-size: cover;
 }
-#foto3{
+
+#foto3 {
     border-radius: 15px;
     background: url(/ImagenesMikuy/Pailon\ del\ Diablo\ 3.jpg);
     background-size: cover;
 }
 
-.califica{
-    padding-left: 10%;
-    padding-right: 10%;
+
+/*CALIFICAR PUBLICACION*/
+
+.califica {
+    position: relative;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.seguirLeyendo{
-    padding-left: 10%;
+.califica h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000;
 }
 
-.seguirLeyendo h2{
-    font-size: 2em;
+.califica .rating {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-direction: row-reverse;
 }
 
-.tarjetaPublicaciones{
+.califica .rating input {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+.califica .rating input::before {
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size: 34px;
+    position: absolute;
+    left: 4px;
+    color: #030b0f;
+    transition: 0.5s;
+}
+
+.califica .rating input:nth-child(2n+1)::before {
+    right: 4px;
+    left: initial;
+}
+
+.califica .rating input:hover~input::before,
+.califica .rating input:hover::before,
+.califica .rating input:checked~input::before,
+.califica .rating input:checked::before {
+    color: #E09100;
+}
+
+
+/*PUBLICACIONES RECOMENDADAS*/
+.tarjetaPublicaciones {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2%;
+    row-gap: 40px;
     padding: 1% 10%;
+    margin-bottom: 50px;
 }
 
-.tarjeta{
+.seguirLeyendo {
+    grid-column: span 3;
+}
+
+.seguirLeyendo h2 {
+    font-size: 2em;
+}
+
+.tarjeta {
     width: 100%;
     top: 1px;
     background: #D9D9D9;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }
 
-.tarjetaPortada{
+.tarjetaPortada {
     width: 100%;
     height: 300px;
     left: 0px;
@@ -90,45 +155,66 @@ h1{
     border-top-right-radius: 15px;
 }
 
+#portadaTarjeta1 {
+    background: url(/ImagenesMikuy/Tren.jpeg);
+    background-size: cover;
+}
 
+#portadaTarjeta2 {
+    background: url(/ImagenesMikuy/CatedralAmbato1.jpg);
+    background-size: cover;
+}
 
-.tarjetaDescripcion{
+#portadaTarjeta3 {
+    background: url(/ImagenesMikuy/Parque\ de\ la\ familia\ 1.jpeg);
+    background-size: cover;
+}
+
+.tarjetaDescripcion {
     margin: 20px;
 }
 
-.tarjetaDescripcion h2{
+.tarjetaDescripcion h2 {
     text-align: center;
 }
 
-.tarjetaDescripcion p{
+.tarjetaDescripcion p {
     text-align: justify;
 }
 
-.califica .estrellas input{
-    display: none;
+/*Responsive Tableta*/
+@media (max-width: 952px) {
+    .tituloPublicacion {
+        height: 350px;
+        padding-top: 170px;
+    }
+    
+    .tarjetaPublicaciones{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+    .seguirLeyendo {
+        grid-column: span 2;
+    }
 }
 
-.estrellas label{
-    font-size: 40px;
-    color: #444;
-    padding: 10px;
-    transition: all 0.2s ease;
-}
+/*Responsive Celular*/
+@media (max-width: 530px) {
+    h1 {
+        line-height: 100px;
+    }
 
-input:not(:checked) label:hover,
-input:not(:checked) label:hover label{
-    color: #fd4;
-}
+    .fotos{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        height: 800px;
+    }
 
-input::checked label{
-    color: #fd4;
-}
+    .tarjetaPublicaciones{
+        grid-template-columns: 1fr;
+    }
 
-input#5-estrellas:checked label{
-    color: #fe7;
-    text-shadow:  0 0 20px #952;
-}
-
-input:checked form{
-    display: block;
+    .seguirLeyendo {
+        grid-column: span 1;
+    }
 }
