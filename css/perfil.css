@@ -1,0 +1,217 @@
+.espacioCabecera {
+    height: 80px;
+}
+
+.cabecera {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoPerfil img {
+    width: 300px;
+}
+
+.configuracion img {
+    height: 60px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #d1d0d0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.boton {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#crearPublicacion{
+    width: 200px;
+}
+
+.tablaPublicaciones {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabla {
+    width: 82vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.encabezadoTabla{
+    width: 100%;
+    height: 10%;
+    padding: 0.8rem 1rem;
+    text-align: center;
+}
+
+.cuerpoTabla{
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    margin: 0.8rem auto;
+    border-radius: 15px;
+    border: 1px solid #0002;
+    overflow: auto;
+}
+
+.cuerpoTabla::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.cuerpoTabla::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.cuerpoTabla:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+table{
+    width: 100%;
+    
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+}
+
+tbody tr:hover{
+    background-color: #0000000b;
+}
+
+.estado{
+    padding: 0.4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.estado.EnLinea{
+    background-color: #007AC2;
+    color: #fff;
+}
+
+.estado.Eliminado{
+    background-color: #D97904;
+    color: #fff;
+}
+
+.titulo{
+    width: 50%;
+}
+
+.estadoT{
+    width: 25%;
+}
+
+.opciones{
+    width: 25%;
+}
+
+.botonesAccion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botonesAccion > *{
+    height: 36px;
+    width: 36px;
+    color: #007bc2;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 10px;
+    animation: 0.5s;
+}
+
+.editar:hover{
+    background: #007AC2;
+    color: #fff;
+    cursor: pointer;
+}
+.eliminar:hover{
+    background: #D97904;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botonesAccion.Elim > *{
+    color: #007bc26c;
+}
+
+.botonesAccion.Elim .editar:hover,
+.botonesAccion.Elim .eliminar:hover{
+    background: none;
+    cursor: default;
+}
+
+tbody tr .titulo a:hover{
+    text-decoration: underline;
+    color: #007AC2;
+    cursor: pointer;
+}
+
+
+/*Responsive Tableta*/
+@media (max-width: 858px) {
+    .espacioCabecera {
+        height: 190px;
+    }
+    .titulo{
+        min-width: 200px;
+    }
+
+    .estadoT{
+        min-width: 150px;
+    }
+    
+    .opciones{
+        min-width: 150px;
+    }
+}
+
+/*Responsive Celular*/
+@media (max-width: 530px) {
+    .fotoPerfil img {
+        width: 200px;
+    }
+    
+    .configuracion img {
+        height: 40px;
+    }
+}
