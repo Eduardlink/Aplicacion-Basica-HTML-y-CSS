@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Open+Sans&display=swap');
+
+section {
+    place-items: center;
+    background-image: url('/ImagenesMikuy/Fondo\ Mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: 140px auto 75px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+.contentendor>* {
+    padding: 1em;
+}
+
+.script {
+    display: none;
+}
+
+/*SLIDER*/
+.slider {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 60px auto;
+}
+
+.paginas {
+    width: 500%;
+    display: flex;
+}
+
+.paginas input {
+    display: none;
+}
+
+.pagina {
+    width: 20%;
+    transition: 2s;
+}
+
+.pagina img {
+    width: 400px;
+}
+
+/* SLIDER - Navegacion Manual*/
+.navegacionManual {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #007AC2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #007AC2;
+}
+
+#radio1:checked~.uno {
+    margin-left: 0%;
+}
+
+#radio2:checked~.uno {
+    margin-left: -20%;
+}
+
+#radio3:checked~.uno {
+    margin-left: -40%;
+}
+
+#radio4:checked~.uno {
+    margin-left: -60%;
+}
+
+/* SLIDER - Navegacion Automatica*/
+.autoNavegacion {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-top: 405px;
+}
+
+.autoNavegacion div {
+    border: 2px solid #007AC2;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.autoNavegacion div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.autoNavegacion .auto-btn1 {
+    background: #007AC2;
+}
+
+#radio2:checked~.autoNavegacion .auto-btn2 {
+    background: #007AC2;
+}
+
+#radio3:checked~.autoNavegacion .auto-btn3 {
+    background: #007AC2;
+}
+
+#radio4:checked~.autoNavegacion .auto-btn4 {
+    background: #007AC2;
+}
+
+.formularioLoguin {
+    padding: 30px 20px;
+}
+
+.formularioLoguin h1 {
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Arima', display;
+}
+
+.formularioLoguin .ingreso {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding: 10px 20px;
+}
+
+.checkboxConexion {
+    padding: 20px;
+}
+
+
+.campos {
+    padding: 0.7em;
+    border-color: #dbd9d9;
+    border-style: solid;
+    outline: none;
+    border-radius: 10px;
+}
+
+.ingreso label {
+    margin: 10px;
+}
+
+.box {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.box:checked{
+    background-color: #007AC2;
+}
+
+.botonesLoguin {
+    display: flex;
+    justify-content: center;
+}
+
+.botonesLoguin>* {
+    margin: 10px 20px;
+}
+
+.botonesLoguin a .ingresar,
+.botonesLoguin a .registrar {
+    width: 20vh;
+}
+
+.claveOlvidada {
+    display: flex;
+    justify-content: center;
+}
+
+.claveOlvidada a:hover {
+    color: #007AC2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Responsive Tableta*/
+@media (max-width: 930px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        margin-top: 190px;
+    }
+
+    .botonesLoguin a .ingresar,
+    .botonesLoguin a .registrar {
+        width: 150px;
+    }
+
+}
+
+/*Responsive Celular*/
+@media (max-width: 530px) {
+    .contenedor {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-top: 190px;
+    }
+
+    .formularioLoguin h1 {
+        margin: 0px 0px;
+        font-size: 2.3em;
+    }
+    .slider {
+        display: none;
+    }
+
+    .botonesLoguin a .ingresar,
+    .botonesLoguin a .registrar {
+        width: 100px;
+    }
+}
