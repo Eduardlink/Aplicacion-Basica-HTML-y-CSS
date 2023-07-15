@@ -140,6 +140,12 @@
     .cabecera{
         grid-template-columns: 1fr;
     }
+    .recomendaciones h2{
+        font-size: 2em;
+    }
+    .recomendaciones p{
+        font-size: 1em;
+    }
     .tarjetaPublicaciones{
         grid-template-columns: repeat(2,1fr);
         row-gap: 50px;
@@ -154,8 +160,14 @@
     .cabecera h3{
         font-size: 1.2em;
     }
+    .busqueda{
+        padding-top: 60%;
+    }
     .barraBusqueda input{
         width: 20px;
+    }
+    .recomendaciones h2{
+        font-size: 1.5em;
     }
     .tarjetaPublicaciones{
         grid-template-columns: 1fr;

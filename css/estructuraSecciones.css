@@ -132,6 +132,8 @@ p{
     }
     .tarjetaPublicaciones{
         grid-template-columns: 1fr;
+        top: 40px;
+        margin-bottom: 50px;
     }
     h2{
         line-height: 28px;

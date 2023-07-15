@@ -107,7 +107,10 @@
 
 /*Responsive Celular*/
 @media (max-width: 530px){
-    
+    .nombreSeccion{
+        height: 35vh;
+    }
+
     .barraBusqueda input{
         width: 20px;
     }
